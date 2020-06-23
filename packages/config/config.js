@@ -33,7 +33,7 @@ export default {
     },
     "wms": {
         "defaults": {
-            "url": "https://geodata.nationaalgeoregister.nl/{workSpaceName}/wms?",
+            "url": "https://geodata.nationaalgeoregister.nl/{workSpaceName}",
             "version": "1.1.1",
             "transparent": true,
             "format": "image/png",
@@ -43,34 +43,34 @@ export default {
         "layers": [
             {
                 "name": "gebouwen",
-                "workSpaceName": "bag",
+                "workSpaceName": "bag/wms?",
                 "layerName": "pand"
             },
             {
                 "name": "percelen",
-                "workSpaceName": "kadastralekaartv3",
+                "workSpaceName": "kadastralekaart/wms/v4_0?",
                 "layerName": "kadastralekaart"
             },
             {
                 "name": "drone-no-fly-zones",
-                "workSpaceName": "dronenoflyzones",
+                "workSpaceName": "dronenoflyzones/wms?",
                 "layerName": "luchtvaartgebieden,landingsite"
             },
             {
                 "name": "hoogte",
-                "workSpaceName": "ahn2",
+                "workSpaceName": "ahn2/wms?",
                 "layerName": "ahn2_05m_int",
                 "styleName": "ahn2:ahn2_05m_detail"
             },
             {
                 "name": "gemeenten",
-                "workSpaceName": "bestuurlijkegrenzen",
+                "workSpaceName": "bestuurlijkegrenzen/wms?",
                 "layerName": "gemeenten",
                 "styleName": "bestuurlijkegrenzen:bestuurlijkegrenzen_gemeentegrenzen"
             },
             {
                 "name": "provincies",
-                "workSpaceName": "bestuurlijkegrenzen",
+                "workSpaceName": "bestuurlijkegrenzen/wms?",
                 "layerName": "provincies",
                 "styleName": "bestuurlijkegrenzen:bestuurlijkegrenzen_provinciegrenzen"
             }
